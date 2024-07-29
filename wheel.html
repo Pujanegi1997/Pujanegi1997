@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .pic{
+    width:100px;
+    height:100px;
+    display:block;
+    margin:auto;
+    margin-top:30px;
+    box-shadow:10px 10px 10px gray
+    cursor:pointer;
+    transition:0.50s;
+    }
+    
+</style>
+<body>
+    <img id="mypic" src="images/p1.jpg" class="pic">
+    <script>
+        var w = 100
+        var d = documents .getElementById("mypic")
+
+        d.onwheel = function(event)
+        {
+            //alert(event.deltaY)
+
+
+              if ((event.deltaY==108)&&(w<300))
+              {
+                w=w+10
+                this.style.width=W+"px"
+                this.style.height=w+"px"
+              }
+
+
+              
+        }
+    </script>
+    
+</body>
+</html>
